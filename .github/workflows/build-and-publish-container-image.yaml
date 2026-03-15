@@ -38,7 +38,7 @@ jobs:
         password: ${{ secrets.GITHUB_TOKEN }}
     - name: Extract metadata (tags, labels) for container
       id: meta
-      uses: docker/metadata-action@v5
+      uses: docker/metadata-action@v6
       with:
         images: ${{ env.REGISTRY }}/steadforce/steadops/util/${{ env.IMAGE_NAME }}
         tags: |
